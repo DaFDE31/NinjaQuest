@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d2slk484j75a2"]
 
-[ext_resource type="Texture2D" uid="uid://dy6ch1s8uar6g" path="res://assets/Backgrounds/Tilesets/TilesetFloor.png" id="1_w5amw"]
+[ext_resource type="Texture2D" uid="uid://bmb7yyljkbj7f" path="res://assets/Backgrounds/Tilesets/TilesetFloor.png" id="1_w5amw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_re7xw"]
 texture = ExtResource("1_w5amw")
@@ -488,3 +488,5 @@ sources/0 = SubResource("TileSetAtlasSource_re7xw")
 
 [node name="Ground" type="TileMapLayer" parent="TileLayers"]
 tile_set = SubResource("TileSet_sytgv")
+
+[node name="Node2D" type="Node2D" parent="TileLayers/Ground"]
