@@ -1,1 +1,3 @@
 res://Scenes/root.tscn
+res://Scenes/main_character.tscn
+res://Scripts/main_character.gd
