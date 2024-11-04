@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730687627
+::res://::1730698683
 icon.svg::CompressedTexture2D::2825434422948704755::1730299296::1730299458::1::::<><>::
 ::res://assets/::1730299458
 LICENSE.txt::TextFile::-1::1730299295::0::1::::<><>::
@@ -1620,10 +1620,10 @@ ScrollIce.png::CompressedTexture2D::2591362397658779944::1730299295::1730299458:
 ScrollPlant.png::CompressedTexture2D::3610969381374373358::1730299295::1730299458::1::::<><>::
 ScrollRock.png::CompressedTexture2D::8248434281664881930::1730299295::1730299458::1::::<><>::
 ScrollThunder.png::CompressedTexture2D::7896114099118312182::1730299295::1730299458::1::::<><>::
-::res://assets/Items/Treasure/::1730299458
+::res://assets/Items/Treasure/::1730698929
 BigTreasureChest.png::CompressedTexture2D::3146823772065967791::1730299295::1730299458::1::::<><>::
 Coin2.png::CompressedTexture2D::5973576099397384788::1730299295::1730299458::1::::<><>::
-GoldCoin.png::CompressedTexture2D::3011416940482093287::1730299295::1730299458::1::::<><>::
+GoldCoin.png::CompressedTexture2D::3011416940482093287::1730299295::1730698929::1::::<><>::
 GoldCup.png::CompressedTexture2D::8079624102037893493::1730299295::1730299458::1::::<><>::
 GoldKey.png::CompressedTexture2D::6612516064030007289::1730299295::1730299458::1::::<><>::
 LittleTreasureChest.png::CompressedTexture2D::7190080326650251946::1730299295::1730299458::1::::<><>::
@@ -2048,5 +2048,15 @@ nine_path_panel.png::CompressedTexture2D::8807514604820970384::1730299296::17302
 nine_path_panel.png::CompressedTexture2D::7081485486724599662::1730299296::1730299458::1::::<><>::
 ::res://assets/UI/Theme/Wip/ThemeWood4/::1730299458
 nine_path_panel.png::CompressedTexture2D::4129768768998282204::1730299296::1730299458::1::::<><>::
-::res://Scenes/::1730584313
-root.tscn::PackedScene::9092206949225380227::1730584313::0::1::::<><>::uid://bmb7yyljkbj7f::::res://assets/Backgrounds/Tilesets/TilesetFloor.png
+::res://Resources/::1730702343
+gold_coin.tres::Resource::8296842717915639189::1730696533::0::1::::<><>::res://Scripts/inventory_items.gd
+::res://Resources/GoldCoin/::1730702463
+goldCoinCollision.tres::RectangleShape2D::1101069153193833798::1730702463::0::1::::<><>::
+::res://Scenes/::1730700688
+main_character.tscn::PackedScene::5077914971266173332::1730700688::0::1::::<><>::uid://j1y05snoiycl::::res://assets/Actor/Characters/NinjaRed2/SpriteSheet.png<>res://Scripts/main_character.gd<>res://Scripts/animation_controller.gd
+pick_up_item.tscn::PackedScene::4001320280163054689::1730700688::0::1::::<><>::uid://bi50ukf580k0v::::res://assets/Items/Treasure/GoldCoin.png
+root.tscn::PackedScene::9092206949225380227::1730700688::0::1::::<><>::uid://bmb7yyljkbj7f::::res://assets/Backgrounds/Tilesets/TilesetFloor.png<>uid://bp2q5pui8v3ix::::res://assets/Backgrounds/Tilesets/TilesetNature.png<>uid://cwdybm3qei803::::res://assets/Backgrounds/Tilesets/TilesetWater.png<>uid://cel1rupb5hcxg::::res://Scenes/main_character.tscn
+::res://Scripts/::1730696533
+animation_controller.gd::GDScript::-1::1730695582::0::1::::AnimationController<>AnimatedSprite2D<>::
+main_character.gd::GDScript::-1::1730694958::0::1::::MC<>CharacterBody2D<>::
+inventory_items.gd::GDScript::-1::1730696533::0::1::::InventoryItem<>Resource<>::
