@@ -2,10 +2,6 @@ res://Scenes/root.tscn
 res://Scenes/main_character.tscn
 res://Scenes/pick_up_item.tscn
 res://Scenes/UI/inventory_slot.tscn
-res://Resources/GoldCoin/goldCoinCollision.tres
-res://Scripts/inventory_items.gd
-res://Scripts/pick_up_item.gd
-res://Scripts/main_character.gd
 res://Scenes/inventory_ui.tscn
 res://Scripts/inventory.gd
 res://Scripts/inventory_ui.gd

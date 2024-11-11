@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cwd877c3jq2y4"]
+
+[ext_resource type="FontFile" uid="uid://dms1f8agmvyjn" path="res://assets/UI/Font/The Wild Breath of Zelda.otf" id="1_d1fwr"]
+
+[resource]
+default_font = ExtResource("1_d1fwr")

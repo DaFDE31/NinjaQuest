@@ -3,14 +3,14 @@ class_name InventorySlot
 
 var is_empty = true
 var is_selected = false
-var slot_to_equip = "Not_Equipable"
+var slot_to_equip = "NotEquipable"
 
 @export var single_button_press = false
 @export var starting_texture: Texture
 @export var start_label: String
 
 @onready var texture_rect: TextureRect = $NinePatchRect/MenuButton/CenterContainer/TextureRect
-@onready var stacks: Label = $NinePatchRect/Stacks
+@onready var stacks_num: Label = $NinePatchRect/Stacks
 @onready var on_click_button: Button = $NinePatchRect/OnClickButton
 @onready var price: Label = $Price
 @onready var name_label: Label = $NameLabel
@@ -32,4 +32,17 @@ func _ready() -> void:
 func on_popup_menu_item_pressed(id: int):
 	print_debug(id)
 	
-	
+func add_item(item: InventoryItem):
+	if item.slot_type != "NotEquipable":
+		var popup_menu: PopupMenu = menu_button.get_popup()
+		var equip_slot_name_array = item.slot_type.to_lower().split("_")
+		var equip_slot_name = " ".join(equip_slot_name_array)
+		slot_to_equip = item.slot_type
+		popup_menu.set_item_text(0, "Equip to " + equip_slot_name)
+	is_empty = false
+	menu_button.disabled = false
+	texture_rect.texture = item.texture
+	name_label.text= item.name
+	if item.stacks < 2:
+		return
+	stacks_num.text = str(item.stacks)
