@@ -2,8 +2,7 @@ extends Area2D
 
 class_name PickUpItem
 
-@export
-var inventory_item : InventoryItem
+@export var inventory_item : InventoryItem
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
