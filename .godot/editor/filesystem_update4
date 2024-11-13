@@ -3,5 +3,3 @@ res://Scenes/main_character.tscn
 res://Scenes/pick_up_item.tscn
 res://Scenes/UI/inventory_slot.tscn
 res://Scenes/inventory_ui.tscn
-res://Scripts/inventory.gd
-res://Scripts/inventory_ui.gd

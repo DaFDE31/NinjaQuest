@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731300468
+::res://::1731334314
 icon.svg::CompressedTexture2D::2825434422948704755::1730299296::1730299458::1::::<><>::
 ::res://assets/::1731295903
 LICENSE.txt::TextFile::-1::1730299295::0::1::::<><>::
@@ -2049,24 +2049,26 @@ nine_path_panel.png::CompressedTexture2D::8807514604820970384::1730299296::17302
 nine_path_panel.png::CompressedTexture2D::7081485486724599662::1730299296::1730299458::1::::<><>::
 ::res://assets/UI/Theme/Wip/ThemeWood4/::1730299458
 nine_path_panel.png::CompressedTexture2D::4129768768998282204::1730299296::1730299458::1::::<><>::
-::res://Resources/::1730703213
+::res://Resources/::1731300679
 ::res://Resources/GoldCoin/::1731291172
 goldCoinCollision.tres::RectangleShape2D::1101069153193833798::1731291172::0::1::::<><>::
 gold_coin.tres::Resource/InventoryItem::8296842717915639189::1730703045::0::1::::<><>::uid://pxmph8r71qcs::::res://Resources/GoldCoin/goldCoinCollision.tres<>res://Scripts/inventory_items.gd<>uid://bi50ukf580k0v::::res://assets/Items/Treasure/GoldCoin.png
 ::res://Resources/Player_resources/::1730703242
 main_character_collision_shapes.tres::CircleShape2D::838459742919908537::1730703242::0::1::::<><>::
-::res://Scenes/::1731300441
-inventory_ui.tscn::PackedScene::3305876239694811071::1731300441::0::1::::<><>::res://Scripts/inventory_ui.gd<>uid://cdg0367f10al0::::res://assets/UI/Dialog/DialogBoxFaceset.png<>uid://dms1f8agmvyjn::::res://assets/UI/Font/The Wild Breath of Zelda.otf
-main_character.tscn::PackedScene::5077914971266173332::1731300440::0::1::::<><>::uid://j1y05snoiycl::::res://assets/Actor/Characters/NinjaRed2/SpriteSheet.png<>res://Scripts/main_character.gd<>res://Scripts/animation_controller.gd<>uid://l7fkr0h0gcy8::::res://Resources/Player_resources/main_character_collision_shapes.tres<>uid://bndnkfjb07eb4::::res://Scenes/inventory_ui.tscn<>res://Scripts/inventory.gd
-pick_up_item.tscn::PackedScene::4001320280163054689::1731300441::0::1::::<><>::uid://bi50ukf580k0v::::res://assets/Items/Treasure/GoldCoin.png<>res://Scripts/pick_up_item.gd<>uid://pxmph8r71qcs::::res://Resources/GoldCoin/goldCoinCollision.tres
-root.tscn::PackedScene::9092206949225380227::1731300440::0::1::::<><>::uid://bmb7yyljkbj7f::::res://assets/Backgrounds/Tilesets/TilesetFloor.png<>uid://bp2q5pui8v3ix::::res://assets/Backgrounds/Tilesets/TilesetNature.png<>uid://cwdybm3qei803::::res://assets/Backgrounds/Tilesets/TilesetWater.png<>uid://cel1rupb5hcxg::::res://Scenes/main_character.tscn<>uid://bxajfpo6dtp1j::::res://Scenes/pick_up_item.tscn<>uid://dqhb11hgqjuhp::::res://Resources/GoldCoin/gold_coin.tres
-::res://Scenes/UI/::1731300441
-inventory_slot.tscn::PackedScene::7600574232799180122::1731300441::0::1::::<><>::res://Scripts/inventory_slot.gd<>uid://d2lbbrb4yf1vl::::res://assets/UI/Dialog/FacesetBox.png
-::res://Scripts/::1731300440
+::res://Resources/UI/::1731300686
+text_theme.tres::Theme::6325251551973037129::1731300686::0::1::::<><>::uid://dms1f8agmvyjn::::res://assets/UI/Font/The Wild Breath of Zelda.otf
+::res://Scenes/::1731301173
+inventory_ui.tscn::PackedScene::3305876239694811071::1731301173::0::1::::<><>::res://Scripts/inventory_ui.gd<>uid://cdg0367f10al0::::res://assets/UI/Dialog/DialogBoxFaceset.png<>uid://cwd877c3jq2y4::::res://Resources/UI/text_theme.tres
+main_character.tscn::PackedScene::5077914971266173332::1731301173::0::1::::<><>::uid://j1y05snoiycl::::res://assets/Actor/Characters/NinjaRed2/SpriteSheet.png<>res://Scripts/main_character.gd<>res://Scripts/animation_controller.gd<>uid://l7fkr0h0gcy8::::res://Resources/Player_resources/main_character_collision_shapes.tres<>uid://bndnkfjb07eb4::::res://Scenes/inventory_ui.tscn<>res://Scripts/inventory.gd
+pick_up_item.tscn::PackedScene::4001320280163054689::1731301173::0::1::::<><>::uid://bi50ukf580k0v::::res://assets/Items/Treasure/GoldCoin.png<>res://Scripts/pick_up_item.gd<>uid://pxmph8r71qcs::::res://Resources/GoldCoin/goldCoinCollision.tres
+root.tscn::PackedScene::9092206949225380227::1731301173::0::1::::<><>::uid://bmb7yyljkbj7f::::res://assets/Backgrounds/Tilesets/TilesetFloor.png<>uid://bp2q5pui8v3ix::::res://assets/Backgrounds/Tilesets/TilesetNature.png<>uid://cwdybm3qei803::::res://assets/Backgrounds/Tilesets/TilesetWater.png<>uid://cel1rupb5hcxg::::res://Scenes/main_character.tscn<>uid://bxajfpo6dtp1j::::res://Scenes/pick_up_item.tscn<>uid://dqhb11hgqjuhp::::res://Resources/GoldCoin/gold_coin.tres
+::res://Scenes/UI/::1731301173
+inventory_slot.tscn::PackedScene::7600574232799180122::1731301173::0::1::::<><>::res://Scripts/inventory_slot.gd<>uid://d2lbbrb4yf1vl::::res://assets/UI/Dialog/FacesetBox.png<>uid://cwd877c3jq2y4::::res://Resources/UI/text_theme.tres
+::res://Scripts/::1731301155
 animation_controller.gd::GDScript::-1::1730695582::0::1::::AnimationController<>AnimatedSprite2D<>::
-inventory.gd::GDScript::-1::1731300440::0::1::::Inventory<>Node<>::
+inventory.gd::GDScript::-1::1731301155::0::1::::Inventory<>Node<>::
 inventory_items.gd::GDScript::-1::1731291172::0::1::::InventoryItem<>Resource<>::
 inventory_slot.gd::GDScript::-1::1731300440::0::1::::InventorySlot<>VBoxContainer<>::
-inventory_ui.gd::GDScript::-1::1731299788::0::1::::InventoryUI<>CanvasLayer<>::
+inventory_ui.gd::GDScript::-1::1731301155::0::1::::InventoryUI<>CanvasLayer<>::
 main_character.gd::GDScript::-1::1731296579::0::1::::MC<>CharacterBody2D<>::
 pick_up_item.gd::GDScript::-1::1731296579::0::1::::PickUpItem<>Area2D<>::
