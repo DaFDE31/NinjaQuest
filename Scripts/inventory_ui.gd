@@ -2,6 +2,7 @@ extends CanvasLayer
 
 class_name InventoryUI
 
+signal equip_item(idx: int, slot_to_equip)
 @onready var grid_container: GridContainer = %GridContainer
 const INVENTORY_SLOT = preload("res://Scenes/UI/inventory_slot.tscn")
 @export var size = 8
@@ -12,6 +13,8 @@ func _ready():
 	for i in size:
 		var inventory_slot = INVENTORY_SLOT.instantiate()
 		grid_container.add_child(inventory_slot)
+		
+		inventory_slot.equip_item.connect(func(slot_to_equip: String):equip_item.emit(i, slot_to_equip))
 
 func toggle():
 	visible = !visible

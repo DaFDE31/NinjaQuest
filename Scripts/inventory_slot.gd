@@ -1,6 +1,8 @@
 extends VBoxContainer
 class_name InventorySlot
 
+signal equip_item
+
 var is_empty = true
 var is_selected = false
 var slot_to_equip = "NotEquipable"
@@ -30,7 +32,13 @@ func _ready() -> void:
 	popup_menu.id_pressed.connect(on_popup_menu_item_pressed)
 	
 func on_popup_menu_item_pressed(id: int):
-	print_debug(id)
+	var pressed_item = menu_button.get_popup().get_item_text(id)
+	
+	if pressed_item == "Drop":
+		#TODO: Handle dropped items
+		print_debug("DROP")
+	elif pressed_item.contains("Equip") && slot_to_equip != "NotEquipable":
+		equip_item.emit(slot_to_equip)
 	
 func add_item(item: InventoryItem):
 	if item.slot_type != "NotEquipable":
