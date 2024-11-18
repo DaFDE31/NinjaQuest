@@ -2,6 +2,8 @@ extends CharacterBody2D
 class_name MC
 const SPEED = 7000.0
 @onready var animated_sprite_2d: AnimationController = $AnimatedSprite2D
+@onready var inventory: Inventory = $Inventory
+
 
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("left", "right", "up", "down")
@@ -21,4 +23,5 @@ func _physics_process(delta: float) -> void:
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area is PickUpItem:
+		inventory.add_item(area.inventory_item, area.stacks)
 		area.queue_free()

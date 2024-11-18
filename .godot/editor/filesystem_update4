@@ -1,12 +1,7 @@
+res://Scenes/level.tscn
+res://Resources/Weapons/Sword/sword_weapon_item.tres
+res://Resources/tileset.tres
+res://Scenes/inventory_ui.tscn
 res://Scenes/root.tscn
-res://Scenes/main_character.tscn
-res://Scripts/main_character.gd
-res://Scripts/animation_controller.gd
-res://Resources/gold_coin.tres
-res://Scripts/inventory_items.gd
 res://Scenes/pick_up_item.tscn
-res://Resources/GoldCoin/gold_coin.tres
-res://Scripts/pick_up_item.gd
-res://Resources/GoldCoin/goldCoinCollision.tres
-res://Scenes/UI/inventory_slot.tscn
-res://Scripts/inventory_slot.gd
+res://Scenes/main_character.tscn
