@@ -2,3 +2,12 @@ res://scenes/level.tscn
 res://Resources/tileset.tres
 res://Resources/Weapons/Sword/sword_weapon_item.tres
 res://scenes/main_character.tscn
+res://Scenes/level12.tscn
+res://Scenes/level.tscn
+res://Scenes/UI/onscreenui.tscn
+res://Scenes/UI/on_s_creen_equip_slot.tscn
+res://Scripts/on_s_creen_equip_slot.gd
+res://Scripts/onscreenui.gd
+res://Scripts/inventory.gd
+res://Scenes/main_character.tscn
+res://Scenes/UI/inventory_slot.tscn
