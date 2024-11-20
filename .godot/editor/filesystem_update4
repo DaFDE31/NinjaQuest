@@ -1,4 +1,4 @@
-res://scenes/level.tscn
+res://Scenes/main_character.tscn
 res://Resources/tileset.tres
 res://Resources/Weapons/Sword/sword_weapon_item.tres
-res://scenes/main_character.tscn
+res://Scenes/level.tscn
