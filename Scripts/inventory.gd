@@ -3,6 +3,7 @@ extends Node
 class_name Inventory
 
 @onready var inventory_ui: CanvasLayer = $"../InventoryUI"
+@onready var on_screen_ui: OnScreenUI = $"../OnScreenUI"
 @export var items: Array[InventoryItem] = [] # inventory of items
 
 func _ready() -> void:
@@ -51,6 +52,6 @@ func add_stackable_item_to_inventory(item: InventoryItem, stacks: int):
 		items.append(item)
 		inventory_ui.add_item(item)
 
-func on_item_equipped(idx: int, slot_to_equip):
+func on_item_equipped(idx: int, slot_to_equip: String):
 	var item_to_equip = items[idx]
-	print_debug(item_to_equip.name)
+	on_screen_ui.equip_item(item_to_equip,slot_to_equip)

@@ -1,4 +1,6 @@
-res://Scenes/main_character.tscn
+res://Scenes/level.tscn
 res://Resources/tileset.tres
 res://Resources/Weapons/Sword/sword_weapon_item.tres
-res://Scenes/level.tscn
+res://Scenes/main_character.tscn
+res://Scenes/UI/on_screen_ui.tscn
+res://Scenes/UI/on_screen_equipment_slot.tscn
