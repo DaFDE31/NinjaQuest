@@ -9,7 +9,7 @@ class_name OnScreenUI
 
 @onready var slots_dictionary = {
 	"Right_Hand": right_hand_slot,
-	"Left Hand": right_hand_slot,
+	"Left_Hand": right_hand_slot,
 	"Potions":potion_slot,
 	
 }

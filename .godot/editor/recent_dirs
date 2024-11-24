@@ -1,9 +1,11 @@
-/Users/bjowens19/Desktop/git/TopDown2.0/Scripts
-res://Scripts
-res://Scenes/UI
 res://Scenes
-res://Resources
+res://assets/FX/Magic/Shield
+res://Resources/Weapons/Shield/
 res://assets/Actor/Characters/NinjaRed2
+res://Scripts
+/Users/bjowens19/Desktop/git/TopDown2.0/Scripts
+res://Scenes/UI
+res://Resources
 res://Resources/Weapons/Sword
 res://Resources/Weapons/Sword/
 res://Resources/UI

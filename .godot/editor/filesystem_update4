@@ -1,6 +1,12 @@
-res://Scenes/level.tscn
+res://Scripts/animation_controller.gd
+res://Scenes/main_character.tscn
 res://Resources/tileset.tres
 res://Resources/Weapons/Sword/sword_weapon_item.tres
-res://Scenes/main_character.tscn
+res://Scenes/level.tscn
 res://Scenes/UI/on_screen_ui.tscn
 res://Scenes/UI/on_screen_equipment_slot.tscn
+res://Scripts/combat_system.gd
+res://Scripts/main_character.gd
+res://Scripts/inventory.gd
+res://Scripts/on_screen_ui.gd
+res://Resources/Weapons/Shield/Shield_inventory_item.tres

@@ -1,3 +1,8 @@
+CollisionShape2D
+Area2D
+AnimatedSprite2D
+Sprite2D
+Node2D
 Label
 TextureRect
 CenterContainer
@@ -7,8 +12,3 @@ HBoxContainer
 ProgressBar
 MarginContainer
 CanvasLayer
-Node
-CollisionShape2D
-Sprite2D
-Area2D
-GridContainer

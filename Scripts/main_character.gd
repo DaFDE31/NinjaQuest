@@ -1,6 +1,6 @@
 extends CharacterBody2D
 class_name MC
-const SPEED = 7000.0
+var SPEED = 7000.0
 @onready var animated_sprite_2d: AnimationController = $AnimatedSprite2D
 @onready var inventory: Inventory = $Inventory
 
