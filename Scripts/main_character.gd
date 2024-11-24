@@ -6,6 +6,8 @@ var SPEED = 7000.0
 
 
 func _physics_process(delta: float) -> void:
+	if animated_sprite_2d.animation.contains("attack"):
+		return
 	var direction = Input.get_vector("left", "right", "up", "down")
 	
 	if direction:

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=5 format=3 uid="uid://bapq0domwrwtm"]
+
+[ext_resource type="Shape2D" uid="uid://c7rpwrhm3mwxy" path="res://Resources/Weapons/Wand/wand_ground_collision_shape.tres" id="1_tmskv"]
+[ext_resource type="Script" path="res://Scripts/inventory_item.gd" id="2_8w148"]
+[ext_resource type="Texture2D" uid="uid://casey2hnuwx2t" path="res://assets/Items/Weapons/MagicWand/Sprite.png" id="3_duejr"]
+[ext_resource type="Resource" uid="uid://7yu1qrwrhxh2" path="res://Resources/Weapons/Wand/wand_weapon_item.tres" id="4_t6kkx"]
+
+[resource]
+script = ExtResource("2_8w148")
+slot_type = "Left_Hand"
+name = "Wand"
+ground_collision_shape = ExtResource("1_tmskv")
+texture = ExtResource("3_duejr")
+max_stacks = 1
+price = 200
+weapon_item = ExtResource("4_t6kkx")

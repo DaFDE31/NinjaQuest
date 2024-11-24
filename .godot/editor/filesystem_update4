@@ -10,3 +10,11 @@ res://Scripts/main_character.gd
 res://Scripts/inventory.gd
 res://Scripts/on_screen_ui.gd
 res://Resources/Weapons/Shield/Shield_inventory_item.tres
+res://Resources/Weapons/Sword/Sword_hand_collision.tres
+res://Resources/Weapons/Wand/Wand_inventory_item.tres
+res://Resources/Weapons/Wand/wand_weapon_item.tres
+res://Scenes/pick_up_item.tscn
+res://Scenes/UI/inventory_slot.tscn
+res://Scripts/inventory_slot.gd
+res://Scripts/inventory_ui.gd
+res://Scripts/pick_up_item.gd

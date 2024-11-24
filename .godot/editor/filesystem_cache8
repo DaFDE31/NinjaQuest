@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732409593
+::res://::1732417400
 icon.svg::CompressedTexture2D::2825434422948704755::1730299296::1732291533::1::::<><>::
 ::res://assets/::1732291533
 LICENSE.txt::TextFile::-1::1731507999::0::1::::<><>::
@@ -2058,13 +2058,16 @@ gold_coin.tres::Resource/InventoryItem::8296842717915639189::1732291248::0::1:::
 main_character_collision_shapes.tres::CircleShape2D::838459742919908537::1732291248::0::1::::<><>::
 ::res://Resources/UI/::1732291248
 text_theme.tres::Theme::6325251551973037129::1732291248::0::1::::<><>::uid://dms1f8agmvyjn::::res://assets/UI/Font/The Wild Breath of Zelda.otf
-::res://Resources/Weapons/::1732291248
+::res://Resources/Weapons/::1732417400
 ::res://Resources/Weapons/Sword/::1732408846
 Sword_ground_collision.tres::RectangleShape2D::3214736797784353135::1732291248::0::1::::<><>::
 Sword_hand_collision.tres::RectangleShape2D::407410421201841225::1732291248::0::1::::<><>::
 sword_inventory_item.tres::Resource/InventoryItem::1507307354300266256::1732291248::0::1::::<><>::uid://f2l8wtoxyjhh::::res://Resources/Weapons/Sword/Sword_hand_collision.tres<>res://Scripts/inventory_item.gd<>uid://c3tvn57812hkp::::res://assets/Items/Weapons/Katana/Sprite.png<>uid://brjnm6skob5w0::::res://Resources/Weapons/Sword/sword_weapon_item.tres
 sword_weapon_item.tres::Resource/WeaponItem::3599022832262484005::1732408846::0::1::::<><>::uid://f2l8wtoxyjhh::::res://Resources/Weapons/Sword/Sword_hand_collision.tres<>uid://cov3w3rs1won8::::res://assets/Items/Weapons/Katana/SpriteInHand.png<>res://Scripts/weapon_item.gd
-::res://Scenes/::1732416013
+::res://Resources/Weapons/Wand/::1732416818
+Shield_inventory_item.tres::Resource/InventoryItem::2418402646508514514::1732416818::0::1::::<><>::res://Scripts/inventory_item.gd
+::res://Scenes/::1732416818
+EnergyShield.tscn::PackedScene::1074994461128434832::1732416818::0::1::::<><>::uid://3aowhh8hl6um::::res://assets/FX/Magic/Shield/SpriteSheetYellow.png
 inventory_ui.tscn::PackedScene::3305876239694811071::1732291471::0::1::::<><>::res://Scripts/inventory_ui.gd<>uid://cdg0367f10al0::::res://assets/UI/Dialog/DialogBoxFaceset.png<>uid://cwd877c3jq2y4::::res://Resources/UI/text_theme.tres
 level.tscn::PackedScene::155385538061996652::1732416013::0::1::::<><>::uid://ci3us51sivln8::::res://Resources/tileset.tres<>uid://cel1rupb5hcxg::::res://Scenes/main_character.tscn<>uid://bxajfpo6dtp1j::::res://Scenes/pick_up_item.tscn<>uid://dqhb11hgqjuhp::::res://Resources/GoldCoin/gold_coin.tres<>uid://vqfeqqnmahie::::res://Resources/Weapons/Sword/sword_inventory_item.tres
 main_character.tscn::PackedScene::5077914971266173332::1732416013::0::1::::<><>::uid://j1y05snoiycl::::res://assets/Actor/Characters/NinjaRed2/SpriteSheet.png<>res://Scripts/main_character.gd<>res://Scripts/animation_controller.gd<>uid://l7fkr0h0gcy8::::res://Resources/Player_resources/main_character_collision_shapes.tres<>uid://bndnkfjb07eb4::::res://Scenes/inventory_ui.tscn<>uid://d3rloj52ryvhq::::res://Scenes/UI/on_screen_ui.tscn<>res://Scripts/inventory.gd<>res://Scripts/combat_system.gd

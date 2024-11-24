@@ -21,22 +21,14 @@ func _ready() -> void:
 func _input(event):
 	
 	if Input.is_action_just_pressed("Right_hand_action"):
-		
-		if !can_attack:
-			return
-		can_attack = false
-		animated_sprite_2d.play_attack_animation()
-		if right_weapon == null:
-			return
-		var attack_direction = animated_sprite_2d.attack_direction
-		var attack_data = right_weapon.get_data_for_direction(attack_direction)
-		right_hand_weapon.position = attack_data.get("attachment_position")
-		right_hand_weapon.rotation_degrees = attack_data.get("rotation")
-		right_hand_weapon.z_index = attack_data.get("z_index")
-		right_hand_weapon.show()
+		perform_attack_action(right_weapon, right_hand_weapon)
 		
 	if Input.is_action_just_pressed("Left_hand_action"):
-		animated_sprite_2d.play_attack_animation()
+		
+		perform_attack_action(left_weapon, left_hand_weapon)
+		
+		
+		
 func set_active_weapon(weapon: WeaponItem, slot_to_equip: String):
 	if slot_to_equip == "Left_Hand":
 		if weapon.collision_shape != null:
@@ -52,3 +44,22 @@ func on_attack_animation_finished():
 	can_attack = true
 	right_hand_weapon.hide()
 	left_hand_weapon.hide()
+
+func perform_attack_action(weapon: WeaponItem, sprite: Sprite2D):
+	if !can_attack:
+		return
+	can_attack = false
+	animated_sprite_2d.play_attack_animation()
+	if weapon == null:
+		return
+	var attack_direction = animated_sprite_2d.attack_direction
+	var attack_data = weapon.get_data_for_direction(attack_direction)
+	if weapon.side_in_hand_texture != null && ["left", "right"].has(attack_direction):
+		sprite.texture = weapon.side_in_hand_texture
+	else:
+		sprite.texture = weapon.in_hand_texture
+	
+	sprite.position = attack_data.get("attachment_position")
+	sprite.rotation_degrees = attack_data.get("rotation")
+	sprite.z_index = attack_data.get("z_index")
+	sprite.show()
