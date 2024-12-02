@@ -57,10 +57,9 @@ func apply_damage(damage: int):
 
 func on_death():
 	set_physics_process(false)
-	animated_sprite_2d.play("died")
-	collision_shape_2d.disabled = true
-	area_collision_shape_2d.disabled = true
-
+	collision_shape_2d.set_deferred("disbaled", true)
+	area_collision_shape_2d.set_deferred("disbaled", true)
+	animated_sprite_2d.play("death")
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if animated_sprite_2d.animation == "death":
 		var loot_drop = PICK_UP_ITEM.instantiate() as PickUpItem

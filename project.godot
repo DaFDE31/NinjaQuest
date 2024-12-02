@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/level.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+TransitionChangeManager="*res://Scenes/transition_manager.tscn"
+
 [display]
 
 window/stretch/mode="viewport"
@@ -77,6 +81,8 @@ Right_hand_action={
 2d_physics/layer_4="Pickup"
 2d_physics/layer_5="Weapons"
 2d_physics/layer_6="Enemy"
+2d_physics/layer_7="Entrances"
+2d_physics/layer_8="Merchants"
 
 [rendering]
 
