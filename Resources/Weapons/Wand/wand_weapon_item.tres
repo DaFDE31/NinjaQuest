@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="WeaponItem" load_steps=4 format=3 uid="uid://7yu1qrwrhxh2"]
+
+[ext_resource type="Shape2D" uid="uid://cifqtnjrhlmrh" path="res://Resources/Weapons/Wand/wand_hand_collision_shape.tres" id="1_6ksw3"]
+[ext_resource type="Texture2D" uid="uid://by6rsf66opl6j" path="res://assets/Items/Weapons/MagicWand/SpriteInHand.png" id="2_qtrxm"]
+[ext_resource type="Script" path="res://Scripts/weapon_item.gd" id="3_fr7sb"]
+
+[resource]
+script = ExtResource("3_fr7sb")
+in_hand_texture = ExtResource("2_qtrxm")
+collision_shape = ExtResource("1_6ksw3")
+attack_type = "Melee"
+left_attachment_position = Vector2(-13, 3)
+right_attachment_position = Vector2(13, 4)
+front_attachment_position = Vector2(-3, 13)
+back_attachment_position = Vector2(-3, -13)
+left_rotation = 90
+right_rotation = -90
+front_rotation = 0
+back_rotation = 180
+left_z_index = 0
+right_z_index = 0
+front_z_index = 0
+back_z_index = 0
