@@ -50,3 +50,9 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.get_parent() is Enemy:
 		var damage_to_player = (area.get_parent() as Enemy).damage_to_player
 		health_system.apply_damage(damage_to_player)
+func setup_test_inventory():
+	const SWORD_INVENTORY_ITEM = preload("res://Resources/Weapons/Sword/sword_inventory_item.tres")
+	const GOLD_COIN = preload("res://Resources/GoldCoin/gold_coin.tres")
+	
+	inventory.add_item(SWORD_INVENTORY_ITEM, 1)
+	inventory.add_item(GOLD_COIN, 100)
