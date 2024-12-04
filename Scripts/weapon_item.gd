@@ -6,6 +6,7 @@ class_name WeaponItem
 @export var side_in_hand_texture: Texture
 @export var collision_shape: RectangleShape2D
 @export_enum("Melee", "Ranged", "Magic") var attack_type: String
+@export var damage = 10
 
 @export_group("Attachment_position")
 @export var left_attachment_position: Vector2

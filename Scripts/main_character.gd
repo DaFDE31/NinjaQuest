@@ -10,6 +10,7 @@ const SPEED = 7000.0
 @export var health = 12
 func get_health():
 	return health
+	
 func _ready() -> void:
 	health_system.init(health)
 	health_system.died.connect(on_player_dead)
@@ -45,10 +46,13 @@ func on_player_dead():
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area is PickUpItem:
 		inventory.add_item(area.inventory_item, area.stacks)
-		print_debug("collide")
 		area.queue_free()
 	if area.get_parent() is Enemy:
-		print_debug("collide")
 		var damage_to_player = (area.get_parent() as Enemy).damage_to_player
 		health_system.apply_damage(damage_to_player)
-		print_debug(health_system.current_health)
+func setup_test_inventory():
+	const SWORD_INVENTORY_ITEM = preload("res://Resources/Weapons/Sword/sword_inventory_item.tres")
+	const GOLD_COIN = preload("res://Resources/GoldCoin/gold_coin.tres")
+	
+	inventory.add_item(SWORD_INVENTORY_ITEM, 1)
+	inventory.add_item(GOLD_COIN, 100)
