@@ -2,6 +2,8 @@ extends Node2D
 
 class_name CombatSystem
 
+signal cast_activeSpell
+
 @onready var animated_sprite_2d: AnimationController = $"../AnimatedSprite2D"
 
 @onready var right_hand_weapon_sprite: Sprite2D = $RightHandWeapon
@@ -24,10 +26,7 @@ func _input(event):
 		perform_attack_action(right_weapon, right_hand_weapon_sprite, right_hand_collision_shape_2d)
 		
 	if Input.is_action_just_pressed("Left_hand_action"):
-		
 		perform_attack_action(left_weapon, left_hand_weapon_sprite, left_hand_collision_shape_2d)
-		
-		
 		
 func set_active_weapon(weapon: WeaponItem, slot_to_equip: String):
 	if slot_to_equip == "Left_Hand":
@@ -66,6 +65,9 @@ func perform_attack_action(weapon: WeaponItem, sprite: Sprite2D, collision_shape
 	sprite.z_index = attack_data.get("z_index")
 	sprite.show()
 	collision_shape.set_deferred("disabled", false)
+	
+	if weapon.attack_type == "Magic":
+		cast_activeSpell.emit()
 
 
 
