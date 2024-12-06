@@ -8,7 +8,7 @@
 script = ExtResource("3_fr7sb")
 in_hand_texture = ExtResource("2_qtrxm")
 collision_shape = ExtResource("1_6ksw3")
-attack_type = "Melee"
+attack_type = "Magic"
 damage = 10
 left_attachment_position = Vector2(-13, 3)
 right_attachment_position = Vector2(13, 4)

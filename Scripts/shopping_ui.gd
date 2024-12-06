@@ -37,9 +37,11 @@ func on_buy_slot_clicked(idx: int):
 	buy_button.disabled = selected_buy_item_indexes.size() == 0
 	
 func setup_selling_grid():
+	#var player = get_tree().get_first_node_in_group("player") as MC
+	
 	for child in selling_container.get_children():
 		child.queue_free()
-	for i in items_to_buy.size():
+	for i in items_to_sell.size():
 		var selling_slot = INVENTORY_SLOT.instantiate() as InventorySlot
 		selling_slot.single_button_press = true
 		selling_container.add_child(selling_slot)
@@ -68,9 +70,32 @@ func _on_buy_button_pressed() -> void:
 		var gold_to_add_to_merchant_inventory  = item_to_buy.price * item_to_buy.stacks
 		gold_coin_inventory_item.stacks = gold_to_add_to_merchant_inventory
 		var merchant = get_tree().get_first_node_in_group("merchant") as Merchant
-		merchant.items_to_buy.erase(items_to_buy)
+		merchant.items_to_buy.erase(item_to_buy)
 		merchant.items_to_buy.append(gold_coin_inventory_item)
 		buying_container.get_child(i).queue_free()
 		selected_buy_item_indexes.erase(i)
 	setup_buying_grid()
 	setup_selling_grid()
+	buy_button.disabled = true
+
+
+func _on_sell_button_pressed() -> void:
+	var merchant = get_tree().get_first_node_in_group("merchant") as Merchant
+	var player = get_tree().get_first_node_in_group("player") as MC
+	var inventory = (player.find_child("Inventory") as Inventory)
+	for i in selected_sell_item_indexes:
+		var item_to_sell = items_to_sell[i]
+		selling_container.get_child(i).queue_free()
+		var current_items_in_player_inventory = inventory.items
+		current_items_in_player_inventory.erase(item_to_sell)
+		inventory.items = current_items_in_player_inventory
+		inventory.clear_inventory_slot(i)
+		selected_sell_item_indexes.erase(i)
+		merchant.items_to_buy.append(item_to_sell)
+		
+		var gold_to_add_to_player = item_to_sell.price * item_to_sell.stacks
+		inventory.add_item(gold_coin_inventory_item, gold_to_add_to_player)
+	items_to_buy = merchant.items_to_buy
+	setup_buying_grid()
+	setup_selling_grid()
+	sell_button.disabled = true
