@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="TopDown"
-run/main_scene="res://Scenes/level.tscn"
+run/main_scene="res://Scenes/title.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 TransitionChangeManager="*res://Scenes/transition_manager.tscn"
+PlayerState="*res://Scripts/PlayerState.gd"
 
 [display]
 

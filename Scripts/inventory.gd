@@ -28,7 +28,6 @@ func add_item(item: InventoryItem, stacks: int):
 		add_stackable_item_to_inventory(item, stacks)
 	else:
 		var idx = items.find(null)
-		print_debug(idx)
 		if idx != -1:
 			items[idx] = item
 		else:

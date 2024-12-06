@@ -5,7 +5,7 @@ class_name Enemy
 @export var speed: float = 50
 @export var patrol_path: Array[Marker2D] = []
 @export var patrol_wait_time = 1.0
-@export var damage_to_player = 10
+@export var damage_to_player = 1
 
 @export var health: int = 50
 @export var item_to_drop: InventoryItem

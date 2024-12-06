@@ -1,4 +1,8 @@
+Marker2D
+Node2D
 Node
+CollisionShape2D
+Area2D
 InventorySlot
 HBoxContainer
 Label
@@ -8,7 +12,3 @@ Button
 GridContainer
 VSeparator
 MarginContainer
-CanvasLayer
-Sprite2D
-TileMapLayer
-Marker2D

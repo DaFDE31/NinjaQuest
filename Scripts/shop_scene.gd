@@ -20,4 +20,5 @@ func on_transition_done():
 	$".".set_process_input(true)
 
 func _on_exit_area_body_entered(body: Node2D) -> void:
+	PlayerState.previous_scene = get_tree().current_scene.name
 	TransitionChangeManager.change_scene("res://Scenes/level.tscn")

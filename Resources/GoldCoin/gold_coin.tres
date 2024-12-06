@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("2_qaaed")
-slot_type = "Not Equipable"
+slot_type = "NotEquipable"
 name = "Gold"
 ground_collision_shape = ExtResource("1_fyd87")
 texture = ExtResource("3_3v5i2")

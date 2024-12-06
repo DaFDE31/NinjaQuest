@@ -33,7 +33,6 @@ func _ready() -> void:
 	
 	# Generate hearts based on total quarter-hearts (healthManager.life)
 	var max_health = main_character.get_health()
-	print_debug(max_health)
 	var total_hearts = ceil(float(max_health) / 4)
 	for i in range(total_hearts):
 		var newHeart = Sprite2D.new()
