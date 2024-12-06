@@ -16,7 +16,9 @@ func _ready() -> void:
 	health_system.died.connect(on_player_dead)
 	health_system.damage_taken.connect(on_damage_taken)
 	
-
+func init_inventory():
+	if inventory == null:
+		inventory = Inventory.new()
 func _physics_process(delta: float) -> void:
 	if animated_sprite_2d.animation.contains("attack"):
 		return
