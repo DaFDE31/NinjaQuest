@@ -7,12 +7,11 @@ extends Node
 func _ready() -> void:
 	main_character.health = PlayerState.health
 	if PlayerState.inventory:
-		main_character.inventory.items = PlayerState.inventory.items.duplicate(true)
+		for i in PlayerState.inventory.items:
+			main_character.inventory.add_item(i, i.stacks)
 	else:
 		PlayerState.init_inventory()
 		main_character.inventory.items = PlayerState.inventory.items.duplicate(true)
-	print_debug(main_character.health)
-	print_debug(main_character.inventory.items)
 	TransitionChangeManager.transition_done.connect(on_transition_done)
 	if PlayerState.previous_scene == "TutorialScene":
 		main_character.position = tutorial_spawn.position
@@ -24,3 +23,11 @@ func _ready() -> void:
 func on_transition_done():
 	main_character.set_physics_process(true)
 	main_character.set_process_input(true)
+
+
+func _on_shop_area_2d_body_entered(body: Node2D) -> void:
+	PlayerState.previous_scene = get_tree().current_scene.name
+	if main_character:
+		PlayerState.health = main_character.health_system.current_health
+		PlayerState.inventory.items = main_character.inventory.items.duplicate(true)
+	TransitionChangeManager.change_scene("res://Scenes/shop_scene.tscn")

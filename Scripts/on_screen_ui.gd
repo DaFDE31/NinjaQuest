@@ -53,7 +53,6 @@ func _process(delta: float) -> void:
 		
 		# Determine heart state based on healthManager.life
 		var current_health = health_system.current_health
-		#print_debug(current_health)
 		var quarter_life = current_health - (index * 4)
 		if quarter_life >= 4:
 			h.frame = 4  # Full heart

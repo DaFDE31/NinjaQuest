@@ -11,11 +11,9 @@ func _ready() -> void:
 	player.inventory.items = PlayerState.inventory.items.duplicate(true)
 	self.add_child(player)
 	if TransitionChangeManager.is_transitioning:
-		#player.set_physics_process(false)
-		#player.set_process_input(false)
-		pass
+		player.set_physics_process(false)
+		player.set_process_input(false)
 	player.position = spawn_point.position
-	#player.setup_test_inventory()
 	
 func on_transition_done():
 	$".".set_physics_process(true)
@@ -23,10 +21,7 @@ func on_transition_done():
 
 func _on_exit_area_body_entered(body: Node2D) -> void:
 	PlayerState.previous_scene = get_tree().current_scene.name
-	print_debug(PlayerState.previous_scene)
 	if player:
 		PlayerState.health = player.health_system.current_health
 		PlayerState.inventory.items = player.inventory.items.duplicate(true)
-		print_debug(PlayerState.health)
-		print_debug(PlayerState.inventory.items)
 	TransitionChangeManager.change_scene("res://Scenes/level.tscn")
